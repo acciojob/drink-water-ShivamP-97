@@ -29,14 +29,17 @@ function updateBigCup() {
     if (fullCups === 0) {
         percentage.style.height = "0";
         percentage.innerText = "0%";
+        percentage.style.visibility = "hidden";  
     } else {
         let percent = (fullCups / totalCups) * 100;
         percentage.style.height = percent + "%";
         percentage.innerText = `${percent}%`;
+        percentage.style.visibility = "visible"; 
     }
 
     const remaining = 2 - (fullCups * 0.25);
     liters.innerText = remaining.toFixed(2) + "L";
 
-    remained.style.height = ((2 - (fullCups * 0.25)) / 2) * 100 + "%";
+    remained.style.height = ((remaining / 2) * 100) + "%";
 }
+

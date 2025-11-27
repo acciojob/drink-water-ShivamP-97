@@ -42,10 +42,11 @@ h3 { margin-top: 5px; font-weight: 400; }
 }
 
 #percentage {
-    height: 20%;
+    height: 0;
     background-color: #a7d4ff;
     font-size: 2rem;
     transition: height .4s ease;
+    visibility: hidden; 
 }
 
 .text {
