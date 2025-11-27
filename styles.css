@@ -1,1 +1,80 @@
 /*  your css code here. If applicable */
+body {
+    background-color: #3498db;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 { margin: 10px 0 0 0; }
+h3 { margin-top: 5px; font-weight: 400; }
+
+.cup {
+    background-color: #fff;
+    border: 4px solid #015ecf;
+    border-radius: 0 0 40px 40px;
+    width: 150px;
+    height: 330px;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #015ecf;
+}
+
+#remained, #percentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+#remained {
+    height: 80%;
+    transition: height .4s ease;
+}
+
+#percentage {
+    height: 20%;
+    background-color: #a7d4ff;
+    font-size: 2rem;
+    transition: height .4s ease;
+}
+
+.text {
+    margin: 25px 0 10px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.cups {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 15px;
+}
+
+.cup-small {
+    background-color: rgba(255,255,255,0.5);
+    border: 3px solid #015ecf;
+    border-radius: 0 0 10px 10px;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #015ecf;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cup-small.full {
+    background-color: #6bb6ff;
+    color: #fff;
+}
